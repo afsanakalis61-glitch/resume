@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+     <link rel ="stylesheet" href ="style.css">
+</head>
+<body>
+    <h1 id="y"> Simple Calculator</h1>
+      <div class ="calculator">
+        <lable for ="number"></lable>
+         <Input type ="number" id="number" name=" number" required><br><br>
+        <input type="button"class="c" value ="AC">
+        <input type="button" class="c" value ="()">
+        <input type="button" class="c" value ="%" > 
+        <input type="button" class="c" value ="➗"><br>
+        <input type="button"  class="c" value ="7">
+        <input type="button" class="c"  value ="8">
+        <input type="button" class="c" value ="9">
+        <input type="button" class="c" value ="✖️"><br>
+        <input type="button" class="c" value ="4">
+        <input type="button"  class="c"value ="5">
+        <input type="button"  class="c" value ="6">
+        <input type="button" class="c" value ="➖"><br>
+        <input type="button" class="c" value ="1">
+        <input type="button" class="c" value ="2">
+        <input type="button" class="c" value ="3">
+        <input type="button" class="c" value ="➕"><br>
+        <input type="button" class="c" value ="0">
+        <input type="button" class="c" value =".">
+        <input type="button" class="c" value ="Cut">
+        <input type="button"  class="c" value ="🟰"><br>
+  </div>  
+  <script>
+    const buttons = document.querySelectorAll('input[type="button"]');
+    const inputField = document.getElementById('number');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const value = button.value;
+
+        if (value === 'AC') {
+          inputField.value = '';
+        } else if (value === '🟰') {
+          try {
+            inputField.value = eval(inputField.value);
+          } catch {
+            inputField.value = 'Error';
+          }
+        } else if (value === 'Cut') {
+          inputField.value = inputField.value.slice(0, -1);
+        } else {
+          inputField.value += value;
+        }
+      });
+    });
+   
+  </script>
+  
+</body>
+</html>

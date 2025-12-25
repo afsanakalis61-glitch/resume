@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href ="style.css">
+</head>
+<body>
+<div class="form-container">
+        <h2>Registration Form</h2>
+
+        <form method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm">Confirm Password:</label>
+            <input type="password" id="confirm" name="confirm" required>
+
+           <label>Gender:</label>
+            <label><input type = "radio" name = "gender">Male</label>
+            <label><input type = "radio" name = "gender">female</label>
+
+            <label>Course:</label>
+            
+            <label><input type="checkbox" id="webtech" name="course" value="Web Tech">Web tech</label>
+            <label><input type="checkbox" id="digital" name="course" value="Digital">Digital</label>
+            <label> <input type="checkbox" id="digital" name="course" value="Maths">System design</label>
+            
+           <label>country:</label>
+            <select name = "country " class = "country">
+                <option  value = "">choose country</option>
+                <option value ="India">india</option>
+                <option value ="canada">canada</option>
+                <option value ="Others">others</option>
+                
+                
+            </select>
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>

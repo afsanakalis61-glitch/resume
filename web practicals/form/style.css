@@ -1,0 +1,20 @@
+.l{
+   
+    border: 2px solid black;
+    margin:auto;
+    padding-top:200px;
+    padding-left: 190px;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+label{
+   display:block;
+    margin-bottom: 1px;
+
+    
+}
+body{
+    text-align: center;
+    background-color: rgb(204, 229, 255);
+}

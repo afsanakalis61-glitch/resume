@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> TABLE SQUARE</title>
+        <style>
+            table, td, tr {
+                border: 2px solid ;
+            } 
+        </style>
+    </head>
+    <body>
+        <h1> Table Square Numbers</h1>
+        <table>
+            <tr>
+                <td> NUMBER</td>
+                <td> Square</td>
+                <td> Cube</td>
+            </tr>
+        </table>
+        <script>
+            let tab = document.querySelector('table');
+            for(  i = 0; i<20; i++){
+                let row = document.createElement('tr');
+                table.appendChild('row')
+                let col1 = document.createElement('td');
+                let col2 = document.createElement('td');
+                let col3 = document.createElement('td');
+                row.appendChild("col1");
+                row.appendChild("col2");
+                row.appendChild("col3");
+                col1.innerText=i;
+                col2.innerText=i*i;
+                col3.innerText=i*i*i;
+
+
+
+
+
+            }
+
+        </script>
+    </body>
+    
+</html>
